@@ -19,4 +19,4 @@ const variable = 'name';
 console.log(myObject.variable); // undefined
 // this is equivalent to myObject['variable']
 
-console.log(myObject[variable])
+console.log(myObject[variable]) // Shiv Kumar

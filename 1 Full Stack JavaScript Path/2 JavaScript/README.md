@@ -95,3 +95,19 @@ myObject["obnxious property"] // [Function: obnxious property]
 const variable = 'name'
 myObject[variable] // Shiv Kumar
 ```
+
+### 🔴 2.2.2 Lesson Overview
+
+Here is a general overview of the topics in this lesson:
+
+* How to write an object constructor and instantiate the object ✅
+
+* Describe what's a prototype and how to to use it ✅
+
+* Explain inheritance of prototypes ✅
+
+* Understand the guidelines of prototypical inheritance ✅
+
+* Explain what `Object.create` does ✅
+
+* Explain what the `this` keyword ✅
