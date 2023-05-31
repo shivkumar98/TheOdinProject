@@ -193,3 +193,28 @@ const player2 = new Player("stephanies", "O")
 player1.sayName() // steve
 player2.sayName() // stephanies
 ```
+
+### 🔴 2.2.5 Exercise 🔴
+
+* Write a constructor for making "Book" objects with the following properties: `title`, `author` number of `pages`, and whether or not the book has been `read`
+
+* Put a function in the constructor which will return a string like:
+
+![](screenshots/2023-05-31-15-03-19.png)
+
+#### 🔺 Solution: 🔺
+
+```javascript
+function Book(title, author, pages, read){
+    this.title = title;
+    this.author = author;
+    this.pages = pages;
+    this.read = read;
+    this.info = function(){
+        return title+" by "+author+", "+pages+" pages"+ ", "+(read?"has been read":"not read yet")
+    }
+}
+const theHobbit = new Book("The Hobbit",
+"J.R.R. Tolkien", 295, false) 
+console.log(theHobbit.info()) // The Hobbit by J.R.R. Tolkien, 295 pages, not read yet
+```
