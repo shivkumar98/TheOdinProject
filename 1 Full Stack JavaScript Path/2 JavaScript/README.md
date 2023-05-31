@@ -274,3 +274,31 @@ console.log( Player.prototype.hasOwnProperty('valueOf')) // false
 ```javascript
 console.log( Object.prototype.hasOwnProperty('hasOwnProperty')) // true
 ```
+
+#### 🔺 Recommend Method for Prototypical Inheritance 🔺
+
+* We can use `Object.setPrototypeOf()` to mutate the prototype of an object
+```javascript
+function Person(name) {
+    this.name = name;
+}
+Person.prototype.sayName = function() {
+    console.log(`Hello, I'm ${this.name}`)
+}
+function PlayerWithInheritance(name, marker){
+    this.name = name;
+    this.marker = marker
+}
+Object.setPrototypeOf(PlayerWithInheritance.prototype, Person.prototype)
+const playerOne = new PlayerWithInheritance("Shiv", "X")
+playerOne.sayName() // Hello, I'm Shiv
+```
+
+
+* ⚠️ We COULD write the following: ⚠️
+
+```javascript
+Player.prototype = Person.prototype
+```
+
+* But this very quickly becomes problematic so its best avoided!!

@@ -14,4 +14,23 @@ console.log(Object.prototype.hasOwnProperty('valueOf')) // true
 
 console.log( Player.prototype.hasOwnProperty('valueOf')) // false
 
-console.log( Object.prototype.hasOwnProperty('hasOwnProperty'))
+console.log( Object.prototype.hasOwnProperty('hasOwnProperty')) // true
+
+
+function Person(name) {
+    this.name = name;
+}
+
+Person.prototype.sayName = function() {
+    console.log(`Hello, I'm ${this.name}`)
+}
+
+function PlayerWithInheritance(name, marker){
+    this.name = name;
+    this.marker = marker
+}
+
+Object.setPrototypeOf(PlayerWithInheritance.prototype, Person.prototype)
+
+const playerOne = new PlayerWithInheritance("Shiv", "X")
+playerOne.sayName() // Hello, I'm Shiv
