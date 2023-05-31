@@ -218,3 +218,5 @@ const theHobbit = new Book("The Hobbit",
 "J.R.R. Tolkien", 295, false) 
 console.log(theHobbit.info()) // The Hobbit by J.R.R. Tolkien, 295 pages, not read yet
 ```
+
+### 🔴 2.2.6 Exercise 🔴
