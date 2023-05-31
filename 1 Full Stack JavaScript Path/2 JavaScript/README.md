@@ -111,3 +111,85 @@ Here is a general overview of the topics in this lesson:
 * Explain what `Object.create` does ✅
 
 * Explain what the `this` keyword ✅
+
+
+### 🔴 2.2.3 Object as a Design Pattern
+
+#### 🔺 An Example 🔺
+
+* Let's look at how we would make a game of Tic Tac Toes WITHOUT using objects. The code would look something like:
+
+
+```javascript
+const playerOneName = "Shiv"
+const playerTwoName = "Sammy"
+const playerOneMarker = "X"
+const playerTwoMarker = "O"
+
+console.log(playerOneName)
+console.log(playerTwoName)
+```
+
+* Instead of writing code using variables, we can set up OBJECTS:
+
+```javascript
+
+const playerOne = {
+    name: "Shiv",
+    marker: "X",
+    points: 10
+}
+
+const playerTwo = {
+    name: "Sammy",
+    marker: "O",
+    points: 5
+}
+```
+
+* Objects enable us to access properties:
+
+```javascript
+function printName(player){
+    console.log(player.name)
+}
+
+printName(playerOne) // Shiv
+
+function gameOver(winningPlayer) {
+    console.log(winningPlayer.name + " is the winner!")
+}
+```
+
+### 🔴 2.2.4 Object Constructors
+
+* We can define a CONSTRUCTOR function which can be used to instantiate an object:
+
+```javascript
+function Player(name, marker) {
+    this.name = name;
+    this.marker = marker;
+}
+```
+
+* We call the constructor with the `new` keyword to actually create an instance:
+
+```javascript
+const player = new Player('steve', 'X')
+```
+
+* We can also define a method within a constructor, such that all instance have a function defined on them:
+
+```javascript
+function Player(name, marker){
+    this.name=name;
+    this.marker=marker;
+    this.sayName = function() { console.log(this.name)}
+}
+
+const player1 = new Player("steve", "X")
+const player2 = new Player("stephanies", "O")
+
+player1.sayName() // steve
+player2.sayName() // stephanies
+```
