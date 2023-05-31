@@ -23,6 +23,7 @@
 
 * The course is broken up to the bite-sized lessons and their accompanying projects.
 
+<br>
 
 ## 🟦 1.2 A Quick Review
 
@@ -30,6 +31,7 @@
 
 * jQuery is NOT included in this curriculum.
 
+<hr>
 
 # 🧠 2 Organising your JavaScript Code
 
@@ -57,6 +59,7 @@
 
 - [Namaste JavaScript](https://www.youtube.com/playlist?list=PLlasXeu85E9cQ32gLCvAvr9vNaUccPVNP) - This is YouTube playlist about JavaScript
 
+<br>
 
 ## 🟦 2.2 Objects and Object Constructors
 
@@ -219,4 +222,55 @@ const theHobbit = new Book("The Hobbit",
 console.log(theHobbit.info()) // The Hobbit by J.R.R. Tolkien, 295 pages, not read yet
 ```
 
-### 🔴 2.2.6 Exercise 🔴
+### 🔴 2.2.6 The Prototype 
+
+* EVERY object in JS has a `prototype`, this implies that `prototype` is an object itself!
+
+* Therefore, we can access the prototype of an object by calling `object.prototype`
+
+* The `.prototype` property points to the REFERENCE of the object prototype. Hence we can check if two objects from the same constructor have the same prototype.
+
+* We can access an object's prototype by calling `Object.getPrototypeOf(object)`
+
+```javascript
+function Player(name, score){
+    this.name = name;
+    this.score = score; }
+const player1 = new Player("Shiv", 1);
+console.log(Object.getPrototypeOf(player1) === Player.prototype) // true
+```
+
+#### 🔺 `Object.getPrototypeOf()` vs. `.proto` vs. `[[Prototype]]` 🔺
+
+* `Object.getPrototypeOf()` is the standard way of accessing the prototype
+
+* We can achieve the same thing by accessing `.__proto__` - this is now deprecated ⚠️
+
+* We can also use `.[[prototype]]` which achieves the same as the above ⚠️
+ 
+#### 🔺 Prototypal Inheritance 🔺
+
+* What is the purpose of defining properties and functions on the prototype🤔🤔🤔
+
+- It can save memory!✅ Rathen than having a property defined for EACH instance, we have it in a centralised shared area.
+
+- Inheritance reduces code duplication ✅ 
+
+* Using the `valueOf()` method on objects:
+
+```javascript
+console.log(player1.valueOf()) // Player { name: 'Shiv', score: 1 }
+```
+
+* How did `.valueOf()` work when we didn't define it? This is defined in `Object.prototype`! How can we cerify this? We use `.hasOwnProperty()`😱
+
+```javascript
+console.log(Object.prototype.hasOwnProperty('valueOf')) // true
+console.log( Player.prototype.hasOwnProperty('valueOf')) // false
+```
+
+* Where did `.hasOwnProperty()` come from? This is also a function of the `Object` prototype:
+
+```javascript
+console.log( Object.prototype.hasOwnProperty('hasOwnProperty')) // true
+```
