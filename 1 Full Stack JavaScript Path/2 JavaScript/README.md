@@ -16,3 +16,9 @@
 * JavaScript is becoming a giant in web space, more logic is being passed to the client-side to give fast user experiences. It is also being used on server side with `Node.js`
 
 ### 🔴 The Path
+
+* There are no pre-requisites for this course. The final project will integrate everything you've done in this curicullum
+
+### 🔴 Format
+
+* The course
