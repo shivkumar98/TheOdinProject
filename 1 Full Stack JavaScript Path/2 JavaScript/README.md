@@ -302,3 +302,39 @@ Player.prototype = Person.prototype
 ```
 
 * But this very quickly becomes problematic so its best avoided!!
+
+
+#### 🔺 Using `Object.create()` 🔺
+
+* Suppose we want to use an object instance to set the prototype of an object
+
+```javascript
+const person = {
+  isHuman: false,
+  printIntroduction: function() {
+    console.log(`My name is ${this.name}. Am I human? ${this.isHuman}`);
+  }
+};
+
+const me = Object.create(person);
+```
+
+* It is also a way to set the prototype of a class:
+
+```javascript
+Student.prototype.sayName = function() {
+    console.log("name: "+this.name)
+}
+const studentOne = new Student("Shiv", 11)
+Student.prototype.goToProm = function() {
+    console.log("Eh.. go to prom?")
+}
+studentOne.goToProm() // Eh.. go to prom?
+EigthGrader.prototype = Object.create(Student.prototype);
+function EigthGrader(name) {
+    this.name = name;
+    this.grade = 8;
+}
+// we can access the properties of Student prototype:
+eighthGrader.sayName() // name: kid
+```
