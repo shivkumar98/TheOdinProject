@@ -11,22 +11,22 @@
 
 ## 🟦 1.1 How This Course Will Work
 
-### 🔴 Introduction
+### 🔴 1.1.1 Introduction
 
 * JavaScript is becoming a giant in web space, more logic is being passed to the client-side to give fast user experiences. It is also being used on server side with `Node.js`
 
-### 🔴 The Path
+### 🔴 1.1.2 The Path
 
 * There are no pre-requisites for this course. The final project will integrate everything you've done in this curicullum
 
-### 🔴 Format
+### 🔴 1.1.3 Format
 
 * The course is broken up to the bite-sized lessons and their accompanying projects.
 
 
 ## 🟦 1.2 A Quick Review
 
-### 🔴 jQuery?
+### 🔴 1.2.1 jQuery?
 
 * jQuery is NOT included in this curriculum.
 
@@ -35,7 +35,7 @@
 
 ## 🟦 2.1 Introduction
 
-### 🔴 Organising your JavaScript Code
+### 🔴 2.1.1 Organising your JavaScript Code
 
 * JavaScript is very forgiving in the way code is organised unlike languages like Java.
 
@@ -51,7 +51,7 @@
 
 - ES6 Modules✅
 
-### 🔴 Additional Resources:
+### 🔴 2.1.2 Additional Resources:
 
 - [You Don't Know JS](https://github.com/getify/You-Dont-Know-JS/tree/1st-ed#titles) - this is a GitHub book about how JavaScript works under the hood
 
@@ -60,4 +60,38 @@
 
 ## 🟦 2.2 Objects and Object Constructors
 
-### 🔴 Introduction
+### 🔴 2.2.1 Introduction
+
+* We can define objects in different ways, but the best way is to use `object literal` syntax:
+
+```javascript
+const myObject = {
+    name: 'Shiv Kumar',
+    age: 77,
+    "obnxious property": function() { /* do stuff*/  }
+}
+```
+
+* We can access properties from this object in two ways:
+
+1) Dot notation `myObject.propertyName`
+
+2) Bracket notation `myObject[propertyName]
+
+* We can only use dot notation on a property without a space, it will take anything after the '.' as the property name => variables do not work:
+
+```javascript
+myObject."property" // COMPILER ERROR
+
+const variable = 'name'
+myOject.variable // undefined as this is getting the value for property 'variable'
+```
+
+* The bracket notation DOES ALLOW for spaces and variables:
+
+```javascript
+myObject["obnxious property"] // [Function: obnxious property]
+
+const variable = 'name'
+myObject[variable] // Shiv Kumar
+```
