@@ -24,25 +24,40 @@ let table = document.getElementById('table')
 
 console.log(myLibrary)
 
-
-let html = ""
-for (let i=0;i<myLibrary.length;i++){
-    let book = myLibrary[i]
-    console.log("book: "+book.info())
-    const toggleReadStatus = "<button id='" + i + "'>Change read status</button>"
-
-
-    let tableRow = "<tr>\n"
-    tableRow = tableRow.concat("<td>"+book.title+"</td>")
-    tableRow = tableRow.concat("<td>"+book.author+"</td>")
-    tableRow = tableRow.concat("<td>"+book.pages+"</td>")
-    tableRow = tableRow.concat("<td>"+book.read+"</td>")
-    tableRow = tableRow.concat("<td>"+toggleReadStatus+"</td>") 
+function renderTableBody() {
+    let html = "<tr><th>Title</th><th>Author</th><th>Pages</th><th>Read?</th><th>Change Read status</th><th>Delete</th></tr>"
+    for (let i=0;i<myLibrary.length;i++){
+        let book = myLibrary[i]
+        console.log("book: "+book.info())
+        const toggleReadStatus = "<button id='"+i+"' onClick='toggleReadStatus("+i+")'>Change read status</button>"
 
 
-    tableRow = tableRow.concat("</tr>")
-
-    html = html.concat(tableRow)
+        let tableRow = "<tr>"
+        tableRow = tableRow.concat("<td>"+book.title+"</td>")
+        tableRow = tableRow.concat("<td>"+book.author+"</td>")
+        tableRow = tableRow.concat("<td>"+book.pages+"</td>")
+        tableRow = tableRow.concat("<td>"+book.read+"</td>")
+        tableRow = tableRow.concat("<td>"+toggleReadStatus+"</td>") 
+        tableRow = tableRow.concat("</tr>")
+        html = html.concat(tableRow)
+    }
+    document.getElementById('table').innerHTML = html
 }
 
-document.getElementById('tbody').innerHTML += html
+renderTableBody()
+
+
+function toggleReadStatus (i) {
+    //alert("button clicked: "+i)
+    isBookRead = myLibrary[i].read 
+    myLibrary[i].read = !isBookRead
+    console.log(myLibrary[i])
+    renderTableBody()
+
+    //window.location.reload(); // does not work
+    // Tom's suggestion:
+    // - traverse the DOM from the button to the row
+    // - go down from the row to the read value
+    // - update the innerHTML 
+}
+
