@@ -338,3 +338,7 @@ function EigthGrader(name) {
 // we can access the properties of Student prototype:
 eighthGrader.sayName() // name: kid
 ```
+
+<br>
+
+## 🟦 2.3 Project Library
