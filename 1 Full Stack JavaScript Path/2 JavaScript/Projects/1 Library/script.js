@@ -74,15 +74,27 @@ function openForm() {
 }
 
 function closeForm() {
-    alert("close")
+    document.getElementById("form").reset();
     document.getElementById("bookForm").style.display = "none";
 
 }
 
 document.getElementById("submit").addEventListener("click", function(event){
     event.preventDefault()
-  });
+    let title = document.getElementById('title')?document.getElementById('title').value:""
+    let author = document.getElementById('author')?document.getElementById('author').value:""
+    let pages = document.getElementById('pages')!=null?document.getElementById('pages').value:""
+    let read = document.getElementById('read').checked;
+    console.log("read: "+read)
+    if (title!="" && author!="" && pages!=""){
+        const book = new Book(title, author, pages, read);
+        myLibrary.push(book)
+        renderTableBody()
+        closeForm()
+    } else {
+        alert("fill in the form!")
+    }
 
-function saveBook(){
-    alert("save clicked")
-}
+
+    
+  }, false);

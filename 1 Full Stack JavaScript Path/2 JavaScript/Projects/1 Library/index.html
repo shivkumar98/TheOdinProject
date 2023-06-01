@@ -10,22 +10,19 @@
     <button class="open-button" onclick="openForm()">Add new book</button>
 
     <div class="form-popup" id="bookForm">
-        <form  onsubmit="saveBook()">
+        <form id="form">
             <h1>New Book:</h1>
             <label for="title">Title:</label>
-            <input name="title" type="text">
+            <input id="title" name="title" type="text">
 
             <label for="author">Author:</label>
-            <input name="author" type="text">
+            <input id="author" name="author" type="text">
 
             <label for="pages">Pages:</label>
-            <input name="pages" type="number">
-
-            <label for="title">Title:</label>
-            <input name="title" type="text">
+            <input id="pages" name="pages" type="number">
 
             <label for="read">Read?</label>
-            <input type="checkbox" value="true">
+            <input id="read" type="checkbox" value="yes">
 
             <button type="submit" class="btn" id="submit">Add</button>
             <button onclick="closeForm()" type="button" class="btn cancel">Cancel</button>
