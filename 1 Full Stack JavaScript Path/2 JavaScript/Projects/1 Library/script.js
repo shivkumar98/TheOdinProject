@@ -29,7 +29,9 @@ function renderTableBody() {
     for (let i=0;i<myLibrary.length;i++){
         let book = myLibrary[i]
         console.log("book: "+book.info())
-        const toggleReadStatus = "<button id='"+i+"' onClick='toggleReadStatus("+i+")'>Change read status</button>"
+        const toggleReadStatus = "<button onClick='toggleReadStatus("+i+")'>Change read status</button>"
+        const deleteBookButton = "<button onClick='deleteBook("+i+")'>Delete</button>"
+
 
 
         let tableRow = "<tr>"
@@ -38,6 +40,7 @@ function renderTableBody() {
         tableRow = tableRow.concat("<td>"+book.pages+"</td>")
         tableRow = tableRow.concat("<td>"+book.read+"</td>")
         tableRow = tableRow.concat("<td>"+toggleReadStatus+"</td>") 
+        tableRow = tableRow.concat("<td>"+deleteBookButton+"</td>") 
         tableRow = tableRow.concat("</tr>")
         html = html.concat(tableRow)
     }
@@ -53,11 +56,16 @@ function toggleReadStatus (i) {
     myLibrary[i].read = !isBookRead
     console.log(myLibrary[i])
     renderTableBody()
-
     //window.location.reload(); // does not work
     // Tom's suggestion:
     // - traverse the DOM from the button to the row
     // - go down from the row to the read value
     // - update the innerHTML 
+}
+
+function deleteBook(i){
+    myLibrary.splice(i,1)
+    renderTableBody()
+
 }
 
