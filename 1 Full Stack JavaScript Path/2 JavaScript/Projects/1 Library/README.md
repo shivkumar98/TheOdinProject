@@ -24,4 +24,6 @@
 
 ## My Solution
 
-* My solution to this project can be found [here](/1%20Full%20Stack%20JavaScript%20Path/2%20JavaScript/Projects/1%20Library/README.md)
+* Completed first attempt on 01/06/2023
+
+![](/1%20Full%20Stack%20JavaScript%20Path/2%20JavaScript/screenshots/1-library-project-demo.gif)
