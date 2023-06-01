@@ -15,4 +15,4 @@ console.log(theHobbit.info()) // The Hobbit by J.R.R. Tolkien, 295 pages, not re
 
 const aSongOfIceAndFire = new Book("A Game of Thrones", "G.R.R Martin", 1014, true)
 
-console.log(aSongOfIceAndFire.info())
+console.log(aSongOfIceAndFire.info()) // A Game of Thrones by G.R.R Martin, 1014 pages, has been read
