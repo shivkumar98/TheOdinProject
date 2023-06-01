@@ -348,3 +348,33 @@ eighthGrader.sayName() // name: kid
 * Here is a quick demo:
 
 ![](screenshots/1-library-project-demo.gif)
+
+<br>
+
+## 🟦 2.4 Factory Functions and The Module Pattern
+
+### 🔴 2.4.1 Factory Functions and The Module Pattern
+
+* Object constructors are one of the ways of organising code, HOWEVER many people argue against using constructors
+
+* 😔Issue: They look exactlyh like functions!😠
+
+### 🔴 2.4.2 Lesson Overview
+
+* Describe common bugs when using constructors
+
+* Write a factory method which returns an object
+
+* Explain how scope works in JS
+
+* Explain what a closure is and how it affects private functions + variables
+
+* Decribe how useful private variables + functions are!
+
+* Use inheritance in objects using the factory pattern
+
+* Explain the module pattern
+
+* Describe IIFE
+
+* Explain briefly namespacing and how its useful
