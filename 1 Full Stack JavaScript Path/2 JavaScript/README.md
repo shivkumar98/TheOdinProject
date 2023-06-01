@@ -342,3 +342,9 @@ eighthGrader.sayName() // name: kid
 <br>
 
 ## 🟦 2.3 Project Library
+
+* My solution to this project can be found [here](/1%20Full%20Stack%20JavaScript%20Path/2%20JavaScript/Projects/1%20Library/README.md)
+
+* Here is a quick demo:
+
+[](screenshots/1-library-project-demo.gif)

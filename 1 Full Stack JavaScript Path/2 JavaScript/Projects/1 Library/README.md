@@ -21,3 +21,7 @@
 6) Add a button each book's display to change its `read` status
 
 * You will want to create a function which toggles the books `read` status
+
+## My Solution
+
+* My solution to this project can be found [here](/1%20Full%20Stack%20JavaScript%20Path/2%20JavaScript/Projects/1%20Library/README.md)
