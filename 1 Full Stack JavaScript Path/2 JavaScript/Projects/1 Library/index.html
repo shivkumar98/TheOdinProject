@@ -7,6 +7,32 @@
         </table>
     </body>
 
+    <button class="open-button" onclick="openForm()">Add new book</button>
+
+    <div class="form-popup" id="bookForm">
+        <form  onsubmit="saveBook()">
+            <h1>New Book:</h1>
+            <label for="title">Title:</label>
+            <input name="title" type="text">
+
+            <label for="author">Author:</label>
+            <input name="author" type="text">
+
+            <label for="pages">Pages:</label>
+            <input name="pages" type="number">
+
+            <label for="title">Title:</label>
+            <input name="title" type="text">
+
+            <label for="read">Read?</label>
+            <input type="checkbox" value="true">
+
+            <button type="submit" class="btn" id="submit">Add</button>
+            <button onclick="closeForm()" type="button" class="btn cancel">Cancel</button>
+
+        </form>
+    </div>
+
     <script src="script.js"></script>
 
 </html>

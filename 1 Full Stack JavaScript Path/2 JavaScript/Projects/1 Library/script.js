@@ -66,6 +66,23 @@ function toggleReadStatus (i) {
 function deleteBook(i){
     myLibrary.splice(i,1)
     renderTableBody()
+}
+
+function openForm() {
+    document.getElementById("bookForm").style.display = "block";
 
 }
 
+function closeForm() {
+    alert("close")
+    document.getElementById("bookForm").style.display = "none";
+
+}
+
+document.getElementById("submit").addEventListener("click", function(event){
+    event.preventDefault()
+  });
+
+function saveBook(){
+    alert("save clicked")
+}
