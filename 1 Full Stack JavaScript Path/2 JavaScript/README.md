@@ -347,4 +347,4 @@ eighthGrader.sayName() // name: kid
 
 * Here is a quick demo:
 
-[](screenshots/1-library-project-demo.gif)
+![](screenshots/1-library-project-demo.gif)
