@@ -62,3 +62,38 @@
 <br>
 
 ## 🟦 1.2 Installation Overview
+
+### 🔴 Introduction
+
+* We will look at setting up the development environment!
+
+* The Odin Project does not support Windows natively, so we shall look at:
+
+- installing a supported OS
+- Installing Chrome and code editor
+- Creating SSH key
+
+<br>
+
+## 🟦 1.3 Installations
+
+* I abandon th Linux installation and decide to just install Linux for Windows
+
+* I open up powershell and execute:
+
+```
+PS C:\Users\shiv_> wsl --install
+The requested operation requires elevation.
+Installing: Virtual Machine Platform
+Virtual Machine Platform has been installed.
+Installing: Windows Subsystem for Linux
+Windows Subsystem for Linux has been installed.
+Installing: Ubuntu
+Ubuntu has been installed.
+The requested operation is successful. Changes will not be effective until the system is rebooted.
+PS C:\Users\shiv_>
+```
+
+* I reboot my computer, and set the username and password!
+
+* Already have VSCode installed and will use it as my code editor
