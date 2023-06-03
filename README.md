@@ -4,9 +4,17 @@
 
 <hr>
 
+## Foundations Course
+
+* I started the foundations course on 03/06/2023. 
+
+* You can find my notes [here](/0%20Foundations%20Course/README.md)
+
 ## JavaScript Path
 
-* I started the JavaScript path on 31/05/2023, you can find my notes and project solutions [here](/1%20Full%20Stack%20JavaScript%20Path/2%20JavaScript/README.md)
+* I started the JavaScript path on 31/05/2023
+
+* You can find my notes and project solutions [here](/1%20Full%20Stack%20JavaScript%20Path/2%20JavaScript/README.md)
 
 ### Projects:
 
