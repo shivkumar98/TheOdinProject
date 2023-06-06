@@ -9,7 +9,7 @@
   * [🟦 1.2 Installation Overview](#🟦-12-installation-overview)
   * [🟦 1.3 Installations](#🟦-13-installations)
   * [🟦 1.4 Command Line Basics](#🟦-14-command-line-basics)
-  + [👨‍💻 Assignment - Unix Shell Course 👨‍💻](#👨‍💻-assignment---unix-shell-course-👨‍💻)
+   + [👨‍💻 Assignment - Unix Shell Course 👨‍💻](#👨‍💻-assignment---unix-shell-course-👨‍💻)
   * [🟦 1.5 Setting up Git](#🟦-15-setting-up-git)
 - [🧠 2 Git Basics](#---2-git-basics)
   * [🟦 2.1 Introduction to Git](#---21-introduction-to-git)
