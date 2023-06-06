@@ -310,3 +310,63 @@ $ wc -l *.pdb | sort -n
 $ wc -l *.pdb | sort -n | head -n 1
    9 methane.pdb
 ```
+
+<br>
+
+## 🟦 1.5 Setting up Git
+
+### 🔴 Configure Git and GitHub
+
+#### 🟡 Setup Git
+
+* I setup git within linux:
+
+```sh
+$ git config --global user.name "shivkumar98"
+$ git config --global user.email "shiv_kumar.98@outlook.com"
+```
+
+#### 🟡 Create an SSH Key
+
+* SSH key is a secure identifier - like a long password used to identify your machine. GitHub uses SSH key to upload tgo Github without having to use password everytime!
+
+* I check if Ed25519 algorithm SSH key is already installed and it is not
+
+* I create the SSH key:
+
+```sh
+$ ssh-keygen -t ed25519 -C shiv_kumar.98@outlook.com
+Generating public/private ed25519 key pair.
+Enter file in which to save the key (/home/shiv/.ssh/id_ed25519):
+Created directory '/home/shiv/.ssh'.
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /home/shiv/.ssh/id_ed25519
+Your public key has been saved in /home/shiv/.ssh/id_ed25519.pub
+```
+
+* I go to my Github account, and navigate to `SSH and GPG keys` and create a new key:
+
+![](2023-06-06-20-04-39.png)
+
+* I display the SSH key using:
+
+```sh
+cat ~/.ssh/id_ed25519.pub
+```
+
+* I copy this and paste it in the Key section, and click `Add Key`
+
+#### 🟡 Testing Your Key
+
+* I follow [this article]() and test the following command, and successfully connect!:
+
+```sh
+$ ssh -T git@github.com
+The authenticity of host 'github.com (140.82.121.4)' can't be established.
+ED25519 key fingerprint is SHA256:+DiY3wvvV6TuJJhbpZisF/zLDA0zPMSvHdkr4UvCOqU.
+This key is not known by any other names
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'github.com' (ED25519) to the list of known hosts.
+Hi shivkumar98! You've successfully authenticated, but GitHub does not provide shell access.
+```
