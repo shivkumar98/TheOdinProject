@@ -2,9 +2,19 @@
 
 # 🟪 Foundations Course
 
+## 📜 Table of Contents 📜
+
+- [🧠 1 Prerequisites](#🧠-1-prerequisites)
+  * [🟦 1.1 How Does the Web Woek](#🟦-11-how-does-the-web-work)
+  * [🟦 1.2 Installation Overview](#🟦-12-installation-overview)
+  * [🟦 1.3 Installations](#🟦-13-installations)
+  * [🟦 1.4 Command Line Basics](#🟦-14-command-line-basics)
+  * [🟦 1.5 Setting up Git](#🟦-15-setting-up-git)
+
+
 # 🧠 1 Prerequisites
 
-## 🟦 1.1 How Does the Web Woek
+## 🟦 1.1 How Does the Web Work
 
 ### 🔴 Introduction
 
@@ -347,7 +357,7 @@ Your public key has been saved in /home/shiv/.ssh/id_ed25519.pub
 
 * I go to my Github account, and navigate to `SSH and GPG keys` and create a new key:
 
-![](2023-06-06-20-04-39.png)
+![](screen2023-06-06-20-04-39.png)
 
 * I display the SSH key using:
 
