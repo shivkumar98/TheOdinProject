@@ -168,3 +168,145 @@ $ cp -r thesis/ thesis_backup
 $ ls thesis_backup/
 haiku.txt
 ```
+
+- We can remove files using `rm` command:
+
+```sh
+$ rm haiku.txt
+```
+
+- We can use `rm` safely by using the `-i` option, which will require the user to confirm
+
+```sh
+$ rm -i haiku.txt
+rm: remove regular empty file 'haiku.txt'? y
+```
+
+- In order to delete a directory and contents, we MUST use the recursive option `-r`:
+
+```sh
+$ ls thesis
+haiku.txt
+$ rm thesis
+rm: cannot remove 'thesis': Is a directory
+$ rm -r thesis
+$ ls thesis
+ls: cannot access 'thesis': No such file or directory
+```
+
+- We can copy multiple files to a directory GIVEN the final argument is a directory:
+
+```sh
+$ ls
+alkanes  animal-counts  creatures  numbers.txt  project  writing
+$ mkdir
+ backup
+$ cp creatures/minotaur.dat creatures/unicorn.dat backup/
+$ ls backup/
+minotaur.dat  unicorn.dat
+```
+
+- `*` is a wildcard for 0+ characters, `?` is a wildcard for 1 character exactly
+
+- The `wc` command prints out number of lines words and characters in files:
+
+```sh
+$ pwd
+/mnt/c/Users/shiv_/Documents/GitHub/TheOdinProject/0 Foundations Course/shell-lesson-data/exercise-data/alkanes
+$ ls
+cubane.pdb  ethane.pdb  methane.pdb  octane.pdb  pentane.pdb  propane.pdb
+$ wc cubane.pdb
+  20  156 1158 cubane.pdb
+```
+
+* We use `-l` option to just display the number of lines>:
+
+```sh
+$ wc -l *.pdb
+  20 cubane.pdb
+  12 ethane.pdb
+   9 methane.pdb
+  30 octane.pdb
+  21 pentane.pdb
+  15 propane.pdb
+ 107 total
+```
+
+- Which file contains the fewest lines? We can redirect the result of the `wc` command using `>`:
+
+```sh
+$ wc -l *.pdb > length.txt
+$ ls
+cubane.pdb  ethane.pdb  length.txt  methane.pdb  octane.pdb  pentane.pdb  propane.pdb
+```
+
+- We sort the results of the length.txt file using `sort -n` where `-n` sorts numerically:
+
+```sh
+$ sort length.txt -n
+   9 methane.pdb
+  12 ethane.pdb
+  15 propane.pdb
+  20 cubane.pdb
+  21 pentane.pdb
+  30 octane.pdb
+ 107 total
+ ```
+
+ * I use the `head` command to get the top n lines of the file:
+
+```sh
+$ sort length.txt -n > sorted-lengths.txt
+$ head -n 1 sorted-lengths.txt
+   9 methane.pdb
+```
+
+- We use `echo` to create text and output to a file:
+
+```sh
+$ echo this is the start of my sentence
+this is the start of my sentence
+$ echo hello > testFile.txt
+$ echo line2 >> testFile.txt
+$ head -n 2 testFile.txt
+hello
+line2
+```
+
+- We can use `|` pipe to pass output of one command to another:
+
+```sh
+$ sort -n length.txt
+   9 methane.pdb
+  12 ethane.pdb
+  15 propane.pdb
+  20 cubane.pdb
+  21 pentane.pdb
+  30 octane.pdb
+ 107 total
+$ sort -n length.txt | head -n 1
+   9 methane.pdb
+```
+
+* We can pipe consecutively:
+
+```sh
+$ wc -l *.pdb
+  20 cubane.pdb
+  12 ethane.pdb
+   9 methane.pdb
+  30 octane.pdb
+  21 pentane.pdb
+  15 propane.pdb
+ 107 total
+$ wc -l *.pdb | sort -n
+   9 methane.pdb
+  12 ethane.pdb
+  15 propane.pdb
+  20 cubane.pdb
+  21 pentane.pdb
+  30 octane.pdb
+ 107 total
+$ wc -l *.pdb | sort -n | head -n 1
+   9 methane.pdb
+```
