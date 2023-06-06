@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="../../styles.css">
+<link rel="stylesheet" href="../styles.css">
 
 # 🟪 Foundations Course
 
@@ -97,3 +97,74 @@ PS C:\Users\shiv_>
 * I reboot my computer, and set the username and password!
 
 * Already have VSCode installed and will use it as my code editor
+
+<br>
+
+## 🟦 1.4 Command Line Basics
+
+### 🔴 Lesson Overview
+
+* Describe what the commannd line is and open the command line on your computer
+
+* Use the command line to navigate directories and display directory contents
+
+* Use the command line to create a new directory and a new file
+
+* Use the command line rename or destroy a directory and a file
+
+* Use the command line to open a file or folder in a program
+
+### 🔴 Assignment
+
+1) Visit [The Unix Shell course](https://swcarpentry.github.io/shell-novice/) designed by the Software Carpentry Foundation. There you will find a full complement of lessons on using the CLI, but for now just focus on completing the following lessons:
+
+  - Setup 
+  - Introducing the Shell
+  - Navigating Files and Directories
+  - Working With Files and Directories
+  - Pipes and Filters
+
+2) With your newly discovered CLI super powers, practice creating a folder for a basic website with a main `index.html`, `style.css` and a folder for `images`.
+
+#### 🟡 Unix Shell Course
+
+* I work through the exercises. Here are my notes
+
+- We can list files recursively using `-R` option
+
+- The `-F` option adds additional information to the files to indicate if they are directory, link, executable etc
+
+```sh
+$ ls -F
+LittleWomen.txt*  haiku.txt*  thesis/
+```
+
+- The `mv` command lets you specify a file and move it to a new location. E.g. here I move the `quotes.txt` in the `thesis` directory into current directory:
+
+```sh
+$ ls
+LittleWomen.txt  haiku.txt  thesis
+$ ls thesis/
+draft.txt
+$ mv thesis/draft.txt .
+$ ls
+LittleWomen.txt  draft.txt  haiku.txt  thesis
+```
+
+- The `mv` command also lets you rename
+
+- The `cp` command lets you copy a file. E.g. I copy haiku.txt to /thesis
+
+```sh
+cp haiku.txt thesis/
+$ ls haiku.txt thesis/haiku.txt
+haiku.txt  thesis/haiku.txt
+```
+
+- We can copy a directory recursively (including files and subdirectories) using the `-r` option:
+
+```sh
+$ cp -r thesis/ thesis_backup
+$ ls thesis_backup/
+haiku.txt
+```
