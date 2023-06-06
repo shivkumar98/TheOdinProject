@@ -11,6 +11,7 @@
   * [🟦 1.4 Command Line Basics](#🟦-14-command-line-basics)
   * [🟦 1.5 Setting up Git](#🟦-15-setting-up-git)
 
+<hr>
 
 # 🧠 1 Prerequisites
 
@@ -380,3 +381,15 @@ Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
 Warning: Permanently added 'github.com' (ED25519) to the list of known hosts.
 Hi shivkumar98! You've successfully authenticated, but GitHub does not provide shell access.
 ```
+
+<hr>
+
+# 🧠 2 Git Basics
+
+## 🟦 2.1 Introduction to Git
+
+### 🔴 Introduction
+
+* Git allows you to record differences in files/folders AND keeps a historical record of each save.
+
+* Git != Github. GitHub is a remote storage facility, Git also allows you to push projects to other platforms like GitLab, Bitbucket.
