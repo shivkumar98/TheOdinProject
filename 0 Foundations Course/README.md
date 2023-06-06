@@ -393,3 +393,117 @@ Hi shivkumar98! You've successfully authenticated, but GitHub does not provide s
 * Git allows you to record differences in files/folders AND keeps a historical record of each save.
 
 * Git != Github. GitHub is a remote storage facility, Git also allows you to push projects to other platforms like GitLab, Bitbucket.
+
+## 🟦 2.2 Git Basics
+
+### 📜 2.2.1 Assignment - Git Basics (Instructions) 📜
+
+#### 🟡 Create the Repository 
+
+1) Create a repository named `git_test` on GitHub  and check the `Add a README file` option.
+2) Copy the link for the repository and clone the repo.
+3) Create a directory called `repos` and clone the repository.
+4) Check your connected using `git remote -v`
+
+#### 🟡 Use the Git Workflow 
+
+1) Create a new file called `hello_world.txt` in git_test folder
+2) Use `git status` to see the staging of the file
+3) Type `git add hello_world.txt` and check git status again
+4) Type `git commit -m "added hello_world.txt` and check git status again
+5) Type `git log` and see the output
+
+#### 🟡 Modify a File or Two
+
+1) Open the README of the repo
+2) Add "Hello Odin!" to line 3 and save the file
+3) Type `git status`
+4) Add README to staging (`git add`)
+5) Look at status
+6) Open `hello_world.txt`, add text and save. Use `git add .` to add all files to staging area. Check the status again
+7) Add a commit message "Edit README.md and hello_world.txt" and check git status
+8) Look at git log
+
+#### 🟡 Push Your Work to GitHub
+
+1) Type `git push origin main`
+2) Check status
+
+<hr>
+
+### 👨‍💻 2.2.2 Assignment - Git Basics (Demo) 👨‍💻
+
+* I create the repository:
+
+![](screenshots/2023-06-06-20-49-09.png)
+
+* I navigate to [repos](/0%20Foundations%20Course/Assignments/2%20Git%20Basics/repos/) and clone the repo using this link: https://github.com/shivkumar98/git_test.git
+
+```sh
+$ pwd
+/mnt/c/Users/shiv_/Documents/GitHub/TheOdinProject/0 Foundations Course/Assignments/2 Git Basics/repos
+$ git clone https://github.com/shivkumar98/git_test.git
+Cloning into 'git_test'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+```
+
+* I check if I'm connected:
+
+```sh
+$ git remote -v
+origin  https://github.com/shivkumar98/git_test.git (fetch)
+origin  https://github.com/shivkumar98/git_test.git (push)
+```
+
+* I create a new file:
+
+```sh
+$ touch hello_world.txt
+```
+
+![](2023-06-06-21-03-48.png)
+
+* I add the file to staging and commit:
+
+```sh
+$ git add hello_world.txt
+```
+
+![](2023-06-06-21-05-23.png)
+
+* I check the log:
+
+![](2023-06-06-21-06-05.png)
+
+* I modify the README.md file and save it:
+
+![](2023-06-06-21-08-56.png)
+
+* I also add a line to `hello_world.txt` and add all files to staging and commit:
+
+```sh
+git add .
+$ git commit -m "edited README and hello_world.txt"
+```
+
+![](2023-06-06-21-12-07.png)
+
+* I try to push but get asked for my username/password. I realised I made a mistake when cloning by using the HTTPS URL.😰
+
+* I correct this problem by setting the remote:
+
+```sh
+$ git remote set-url origin git@github.com:shivkumar98/git_test.git
+```
+
+* I then CAN push!:
+
+![](2023-06-06-21-21-32.png)
+
+* I check the repo on github and can see my changes did come through:
+
+![](2023-06-06-21-23-09.png)
