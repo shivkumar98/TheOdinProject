@@ -9,7 +9,12 @@
   * [🟦 1.2 Installation Overview](#🟦-12-installation-overview)
   * [🟦 1.3 Installations](#🟦-13-installations)
   * [🟦 1.4 Command Line Basics](#🟦-14-command-line-basics)
+  + [👨‍💻 Assignment - Unix Shell Course 👨‍💻](#👨‍💻-assignment---unix-shell-course-👨‍💻)
   * [🟦 1.5 Setting up Git](#🟦-15-setting-up-git)
+- [🧠 2 Git Basics](#---2-git-basics)
+  * [🟦 2.1 Introduction to Git](#---21-introduction-to-git)
+  * [🟦 2.2 Git Basics](#---22-git-basics)
+    + [👨‍💻 Assignment - Git Basics 👨‍💻](#------222-assignment---git-basics--demo-------)
 
 <hr>
 
@@ -125,7 +130,7 @@ PS C:\Users\shiv_>
 
 * Use the command line to open a file or folder in a program
 
-### 🔴 Assignment
+### 📜 Assignment - Unix Shell Course (Instructions) 📜
 
 1) Visit [The Unix Shell course](https://swcarpentry.github.io/shell-novice/) designed by the Software Carpentry Foundation. There you will find a full complement of lessons on using the CLI, but for now just focus on completing the following lessons:
 
@@ -135,9 +140,8 @@ PS C:\Users\shiv_>
   - Working With Files and Directories
   - Pipes and Filters
 
-2) With your newly discovered CLI super powers, practice creating a folder for a basic website with a main `index.html`, `style.css` and a folder for `images`.
 
-#### 🟡 Unix Shell Course
+### 👨‍💻 Assignment - Unix Shell Course 👨‍💻
 
 * I work through the exercises. Here are my notes
 
