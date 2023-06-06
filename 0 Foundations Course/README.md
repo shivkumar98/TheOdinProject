@@ -511,3 +511,24 @@ $ git remote set-url origin git@github.com:shivkumar98/git_test.git
 * I check the repo on github and can see my changes did come through:
 
 ![](screenshots/2023-06-06-21-23-09.png)
+
+<hr>
+
+# 🧠 3 HTML Foundations
+
+## 🟦 3.1 Introduction to HTML and CSS
+
+### 🔴 Introduction
+
+* HTML is the raw data that a website is built out of, all the texts, links, cards, lists and buttons are created in HTML
+
+* CSS adds style to the above elements
+
+<br>
+
+
+## 🟦 3.2 Elements and Tags
+
+* Elements are pieces of content wrapped in tags `<>`. E.g. `<p>` is an element.
+
+* Some elements require a closing tag after the content - e.g. `<p>content</p>`, others are self closing like `<br/>` and `<img/>`
