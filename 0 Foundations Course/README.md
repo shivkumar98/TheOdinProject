@@ -532,3 +532,68 @@ $ git remote set-url origin git@github.com:shivkumar98/git_test.git
 * Elements are pieces of content wrapped in tags `<>`. E.g. `<p>` is an element.
 
 * Some elements require a closing tag after the content - e.g. `<p>content</p>`, others are self closing like `<br/>` and `<img/>`
+
+
+<br>
+
+
+## 🟦 3.3 HTML Boilerplate
+
+### 🔴 Creating an HTML File
+
+* I create a HTML file called `index.html` [here](/0%20Foundations%20Course/Examples/1%20HTML%20Boilerplate/index.html).
+
+* We typically name the homepage of our websites as `index.html`
+
+### 🔴 The DOCTYPE
+
+* Every HTML page starts with the doctype declaration - this it to tell the browser which version of HTML should be used for rendering❗
+
+* For HTML5, we use the following declaration:
+
+```html
+<!DOCTYPE html>
+```
+
+### 🔴 HTML Element
+
+* The ROOT ELEMENT of a HTML file is `<html>`. We can specify the lang attribute as "en" to enable assistive technologies:
+
+```html
+<!DOCTYPE>
+<html lang="en">
+</html>
+```
+
+### 🔴 Head Element
+
+* The `<head>` element is where we can add meta-data for our webpage.
+
+* We should always have a meta tag which defines the character set
+
+* The `<title>` element is defined within the head (this is seen in the tab name), if we do not specify then it defaults to filename
+
+```html
+<!DOCTYPE>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <title>My webpage</title>
+   </head>
+</html>
+```
+
+### 🔴 Body Element
+
+* The `<body>` element is used to contain all the user-displayed data
+
+
+### 🔴 Viewing HTML Files in Browser
+
+* TOP recommends using Google Chrome! ❗
+
+* We can open a HTML file in linux using:
+
+```sh
+google-chrome index.html
+```
