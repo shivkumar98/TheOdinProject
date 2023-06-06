@@ -465,7 +465,7 @@ origin  https://github.com/shivkumar98/git_test.git (push)
 $ touch hello_world.txt
 ```
 
-![](2023-06-06-21-03-48.png)
+![](screenshots/2023-06-06-21-03-48.png)
 
 * I add the file to staging and commit:
 
@@ -473,15 +473,15 @@ $ touch hello_world.txt
 $ git add hello_world.txt
 ```
 
-![](2023-06-06-21-05-23.png)
+![](screenshots/2023-06-06-21-05-23.png)
 
 * I check the log:
 
-![](2023-06-06-21-06-05.png)
+![](screenshots/2023-06-06-21-06-05.png)
 
 * I modify the README.md file and save it:
 
-![](2023-06-06-21-08-56.png)
+![](screenshots/2023-06-06-21-08-56.png)
 
 * I also add a line to `hello_world.txt` and add all files to staging and commit:
 
@@ -490,7 +490,7 @@ git add .
 $ git commit -m "edited README and hello_world.txt"
 ```
 
-![](2023-06-06-21-12-07.png)
+![](screenshots/2023-06-06-21-12-07.png)
 
 * I try to push but get asked for my username/password. I realised I made a mistake when cloning by using the HTTPS URL.😰
 
@@ -502,8 +502,8 @@ $ git remote set-url origin git@github.com:shivkumar98/git_test.git
 
 * I then CAN push!:
 
-![](2023-06-06-21-21-32.png)
+![](screenshots/2023-06-06-21-21-32.png)
 
 * I check the repo on github and can see my changes did come through:
 
-![](2023-06-06-21-23-09.png)
+![](screenshots/2023-06-06-21-23-09.png)
