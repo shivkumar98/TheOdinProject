@@ -804,3 +804,27 @@ nisi ut aliquip ex ea commodo consequat.</p>
 ```html
 <a href="pages/about.html">About</a>
 ```
+
+### 🔴 Images
+
+* We can display images using a self-closing `<img>` tag. We specify the image's location with the `src` attribute
+
+* I add TOP logo to my `index.html` page:
+
+```html
+<img src="https://www.theodinproject.com/mstile-310x310.png">
+```
+
+![](screenshots/2023-06-07-12-03-32.png)
+
+* If we want to use an image stored on our website server, then we can use relative links.
+
+* I saw an image in a new directory [images](/0%20Foundations%20Course/Examples/2%20Links%20and%20Images/odin-links-and-images/images/dot.jpg).
+
+* I add a new image element:
+
+```html
+<img src="./images/dot.jpg">
+```
+
+![](screenshots/2023-06-07-12-07-37.png)
