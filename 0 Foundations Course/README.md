@@ -872,4 +872,8 @@ nisi ut aliquip ex ea commodo consequat.</p>
 <br>
 
 
-## 🟦 3.8 Project Recipes
+## 🟦 3.7 Project - Recipes
+
+* In this project, I create a basic recipe website which will consist of a main index page which will have links to a new recipes.
+
+* My solution to this project can be found [here](/0%20Foundations%20Course/Projects/1%20Recipes/README.md)
