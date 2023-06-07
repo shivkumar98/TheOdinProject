@@ -654,3 +654,36 @@ nisi ut aliquip ex ea commodo consequat.</p>
 ### 🔴 HTML Comments
 
 * Comments are enclosed within `<!--` and `-->`
+
+<br>
+
+
+## 🟦 3.5 Lists
+
+### 🔴 Unordered Lists
+
+* We create unordered lists using `<ul>`. E.g.:
+
+```html
+<ul>
+   <li>Item 1</li>
+   <li>Item 2</li>
+   <li>Item 3</li>
+</ul>
+```
+
+![](2023-06-07-10-58-53.png)
+
+### 🔴 Ordered Lists
+
+* Ordered lists are using `<ol>. E.g.:
+
+```html
+<ol>
+   <li>Item 1</li>
+   <li>Item 2</li>
+   <li>Item 3</li>
+</ol>
+```
+
+![](2023-06-07-11-00-31.png)
