@@ -868,3 +868,4 @@ nisi ut aliquip ex ea commodo consequat.</p>
 * PNG is great for images which do no need realism or animation, they allow for transparency and do not have palette limitations so they are good for icons and logos
 
 * SVG are vector based graphics which means they can scale up and down without loss of quality
+
