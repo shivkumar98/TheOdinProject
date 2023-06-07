@@ -2,6 +2,8 @@
 
 ## 📜 Assignment 📜
 
+* Create a new repo for this project on GitHub called `odin-recipes`
+
 ### 🔴 Iteration 1 - Initial structure
 
 1) Create a directory called `odin-recipes`, and create a `index.html` file
@@ -27,3 +29,4 @@
 ### 🔴 Iteration 4 - Add More Recipes
 
 1) Add two more recipes with identical page structures
+2) Remember to add a link to the new recipes on the index page
