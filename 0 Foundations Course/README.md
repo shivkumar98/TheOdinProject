@@ -847,3 +847,24 @@ nisi ut aliquip ex ea commodo consequat.</p>
 <img src="https://www.theodinproject.com/mstile-310x310.png"
       alt="The Odin Project Logo">
 ```
+
+
+### 🔴 Four Main Image Formats
+
+* There are 4 main image formats used on the web which are designed for different purposes. The 4 main types are:
+
+1) JPG ✅
+
+2) GIF ✅
+
+3) PNG ✅
+
+4) SVG ✅
+
+* JPG is designed for handling large color palletes without increasing file size too much! It does not allow for transparency!
+
+* GIFs are the perfect for simple animations but they are limited for color pallate
+
+* PNG is great for images which do no need realism or animation, they allow for transparency and do not have palette limitations so they are good for icons and logos
+
+* SVG are vector based graphics which means they can scale up and down without loss of quality
