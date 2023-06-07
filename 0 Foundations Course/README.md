@@ -597,3 +597,60 @@ $ git remote set-url origin git@github.com:shivkumar98/git_test.git
 ```sh
 google-chrome index.html
 ```
+
+<br>
+
+
+## 🟦 3.4 Working with Text
+
+* In this lesson, we shall see common text-based elements
+
+### 🔴 Paragraphs
+
+* Suppose we have the following HTML, how will it render?
+
+```html
+<body>
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+  incididunt ut labore et dolore magna aliqua.
+
+  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+  nisi ut aliquip ex ea commodo consequat.
+</body>
+```
+
+![](2023-06-06-22-37-33.png)
+
+* In order for the text to come out in paragraphs, we must use the `<p>` tags:
+
+```html
+<body>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+incididunt ut labore et dolore magna aliqua.</p>
+
+<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+nisi ut aliquip ex ea commodo consequat.</p>
+</body>   
+```
+
+### 🔴 Headings
+
+* There are 6 different levels for headings: `<h1>` to `<h6>`
+
+### 🔴 Strong Element
+
+* We use `<strong>` makes text **bold**
+
+### 🔴 Em Element
+
+* The `<em>` element makes text *italic*
+
+### 🔴 Nesting and Indentation
+
+* Elements can be nested within each other. E.g. we can have `<p>` elements within the `<body>` element.
+
+* We use indentation to convey nesting more clearly!
+
+### 🔴 HTML Comments
+
+* Comments are enclosed within `<!--` and `-->`
