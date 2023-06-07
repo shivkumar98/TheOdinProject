@@ -828,3 +828,13 @@ nisi ut aliquip ex ea commodo consequat.</p>
 ```
 
 ![](screenshots/2023-06-07-12-07-37.png)
+
+### 🔴 Parent Directories
+
+* Let's suppose we want to add `dot.jpg` to th about page which is in a seperate directory to the `images` directory. We can reference the parent directory using `../`:
+
+```html
+<img src="../images/dot.jpg">
+```
+
+* The image is displayed as expected
