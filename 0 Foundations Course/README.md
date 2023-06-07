@@ -619,7 +619,7 @@ google-chrome index.html
 </body>
 ```
 
-![](2023-06-06-22-37-33.png)
+![](screenshots/2023-06-06-22-37-33.png)
 
 * In order for the text to come out in paragraphs, we must use the `<p>` tags:
 
@@ -672,7 +672,7 @@ nisi ut aliquip ex ea commodo consequat.</p>
 </ul>
 ```
 
-![](2023-06-07-10-58-53.png)
+![](screenshots/2023-06-07-10-58-53.png)
 
 ### 🔴 Ordered Lists
 
@@ -686,4 +686,61 @@ nisi ut aliquip ex ea commodo consequat.</p>
 </ol>
 ```
 
-![](2023-06-07-11-00-31.png)
+![](screenshots/2023-06-07-11-00-31.png)
+
+### 📜 Assignment - Lists (Instructions) 📜
+
+* Create a new HTML document and create the following lists:
+
+1) An unordered shopping list of your favourite foods
+
+2) An ordered list of todo's you need to get done today
+
+3) An unordered list of places you'd like to visit some day
+
+4) An ordered list of you all time top 5 favourite video games
+
+### 👨‍💻 Assignment Solution 👨‍💻
+
+* I work on this assignment [here](/0%20Foundations%20Course/Assignments/2%20Lists/)
+
+* I create a HTML file:
+
+```html
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="utf-8">
+        <title>My lists</title>
+    </head>
+    <body>
+        <h2>Unordered list of favourite foods:</h1>
+        <ul>
+            <li>Chicken Tikka Masala</li>
+            <li>Chowmein</li>
+            <li>Kebab</li>
+        </ul>
+        <h2>Ordered list of todo's</h2>
+        <ol>
+            <li>Finish HTML Foundations on TOP</li>
+            <li>Phone the pharmacy</li>
+            <li>Go to the shop</li>
+            <li>Prepare dinner</li>
+        </ol>
+        <h2>Unordered list of places I'd like to visit</h2>
+        <ul>
+            <li>Paris</li>
+            <li>New York</li>
+            <li>Canada</li>
+        </ul>
+        <h2>An ordered list of top 5 video games</h2>
+        <ol>
+            <li>The Last of Us</li>
+            <li>inFamous 2</li>
+            <li>Sly Cooper</li>
+            <li>Beyond: Two Souls</li>
+            <li>Danganronpa</li>
+        </ol>
+    </body>
+</html>
+```
