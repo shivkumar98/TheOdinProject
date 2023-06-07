@@ -838,3 +838,12 @@ nisi ut aliquip ex ea commodo consequat.</p>
 ```
 
 * The image is displayed as expected
+
+### 🔴 Alt Attribute
+
+* Every image element must also have an `alt` atttibute which describes the image. This will be displayed if the image cannot be loaded. Also helps with screen readers
+
+```html
+<img src="https://www.theodinproject.com/mstile-310x310.png"
+      alt="The Odin Project Logo">
+```
