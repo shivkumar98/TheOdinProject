@@ -746,3 +746,31 @@ nisi ut aliquip ex ea commodo consequat.</p>
 ```
 
 ![](screenshots/2023-06-07-11-14-11.png)
+
+<br>
+
+
+## 🟦 3.6 Links and Images
+
+* We shall see how to create links to other pages on your own website, display an image using HTML and understand the difference between absolute and relative links
+
+* I prepare for this section by creating a HTML file [here](/0%20Foundations%20Course/Examples/2%20Links%20and%20Images/odin-links-and-images/index.html)
+
+
+### 🔴 Anchor Elements
+
+* Anchor `<a>` elements are used for creating clickable links:
+
+```html
+<a>Click me</a>
+```
+
+* We add `href` attribute to specify the link:
+
+```html
+<a href="https://www.theodinproject.com/about">click me</a>
+```
+
+![](/0%20Foundations%20Course/screenshots/anchors.gif)
+
+* If href is not specified then the anchor will appear as plain text, otherwise it gets higlighted in blue.
