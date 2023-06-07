@@ -869,3 +869,7 @@ nisi ut aliquip ex ea commodo consequat.</p>
 
 * SVG are vector based graphics which means they can scale up and down without loss of quality
 
+<br>
+
+
+## 🟦 3.8 Project Recipes
