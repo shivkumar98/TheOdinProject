@@ -774,3 +774,33 @@ nisi ut aliquip ex ea commodo consequat.</p>
 ![](/0%20Foundations%20Course/screenshots/anchors.gif)
 
 * If href is not specified then the anchor will appear as plain text, otherwise it gets higlighted in blue.
+
+
+### 🔴 Absolute and Relative Links
+
+* 🎃 Absolute links are used to link to pages on the internet (and not part of your website). E.g. `https://www.theodinproject.com/about` 🎃
+
+* Relative links are used for pages within our own website.
+
+* I create another HTML file in the [odin-links-and-images](/0%20Foundations%20Course/Examples/2%20Links%20and%20Images/odin-links-and-images/) directory - `about.html`
+
+* Within the `index.html` file, I make a link to the `about.html` page:
+
+```html
+<a href="about.html">About</a>
+```
+
+
+![](/0%20Foundations%20Course/screenshots/relative-link.gif)
+
+* We can organise our HTML files better, typically the `index.html` is within the root directory and other pages are in a subdirectory.
+
+* I move `about.html` to a new directory [pages](/0%20Foundations%20Course/Examples/2%20Links%20and%20Images/odin-links-and-images/pages/)
+ 
+* ⚠️ The link for the anchor is now broken! ⚠️
+
+* I update the relative link:
+
+```html
+<a href="pages/about.html">About</a>
+```
