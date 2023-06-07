@@ -30,3 +30,5 @@
 
 1) Add two more recipes with identical page structures
 2) Remember to add a link to the new recipes on the index page
+
+<hr>
