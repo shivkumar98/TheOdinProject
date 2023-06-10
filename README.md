@@ -12,7 +12,7 @@
 
 ### HTML and CSS Projects:
 
-1) [Recipe Project](/0%20Foundations%20Course/Projects/1%20Recipes/README.md)
+1) [Recipe Project](https://github.com/shivkumar98/odin-recipes) (completed on 10/06/2023)
 
 ## JavaScript Path
 
