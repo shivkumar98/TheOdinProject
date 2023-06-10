@@ -877,3 +877,176 @@ nisi ut aliquip ex ea commodo consequat.</p>
 * In this project, I create a basic recipe website which will consist of a main index page which will have links to a new recipes.
 
 * My solution to this project can be found [here](/0%20Foundations%20Course/Projects/1%20Recipes/README.md)
+
+<hr>
+
+# 🧠 4 CSS Foundations
+
+## 🟦 4.1 Introduction to CSS
+
+### 🔴 Introduction
+
+* CSS is used for styling our HTML! We shall look at selectors, property and values from CSS
+
+* In order to target unique elements from the HTML we must use class/id selectors!
+
+* If we create a CSS rule for a class, then these style will apply to the element itself AND ALL child elements
+
+* It's not advised to use CSS to target ids ⚠️
+
+* We can group selectors together by seperating the selections with commas
+
+### 🔴 Scrimba Example
+
+* Suppose we have the following HTML:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipe Card</title>
+    <link rel="stylesheet" href="./index.css" />
+ </head>
+ <body>
+    <div class="container" id="container">
+        <div class="recipe-card feature">
+            <img
+            src="cupcake.jpg"
+            alt="Red Velvet Cupcake - Photo by luisana zerpa on Unsplash"
+            />
+            <div class="recipe-content">
+                <h1>Red Velvet Cupcakes</h1>
+                <p>This red velvet cupcake recipe yields soft, fluffy cupcakes with a rich chocolate flavor and a vibrant red color. Topped with a creamy and tangy cream cheese frosting, these cupcakes are perfect for any occasion and are sure to impress your guests.</p>
+                <section class="recipe-info">
+                    <ul>
+                        <li class="recipe-prep-time">
+                            <h2>Preparation Time</h2>
+                            <p>30 min</p>
+                        </li>
+                        <li>
+                            <h2>Total Time</h2>
+                            <p>40 min</p>
+                        </li>
+                        <li>
+                            <h2>Yield</h2>
+                            <p>40 min</p>
+                        </li>
+                    </ul>
+                </section>
+            </div>                            
+            <a href="#">View recipe</a>
+        </div>
+  </div>
+ </body>
+</html>
+
+```
+
+* How can we target `h2` and `a` only within the `recipe-card` class? We would write the class name before specifying the element like so:
+
+```css
+.recipe-card h2,
+.recipe-card a {
+  text
+}
+```
+
+* This produces:
+
+![](screenshots/2023-06-10-16-58-13.png)
+
+
+### 🔴 Selectors
+
+* The 🌎UNIVERSAL🌎 selector is an asterisks which targets ALL elements:
+
+```css
+* {
+  color: purple;
+}
+```
+
+* A TYPE selector targets a HTML type:
+
+```css
+div {
+  color: white
+}
+```
+
+* A 🏫CLASS🏫 selectors targets all HTML elements with the specified class
+
+```html
+<div class="alert-text">Please agree to our terms of service.</div>
+```
+
+```css
+.alert-text {
+  color: red;
+}
+```
+
+* An 🪪ID🪪 selector should be used very sparingly!
+
+#### ⭐ Grouping Selectors
+
+* We can GROUP selectors together to avoid duplicating CSS styles:
+
+```css
+.read { color: white; background-color: black; }
+.unread { color: white; background-color: black; }
+
+/* we can group the above together to: */
+.read, .unread {
+   color: white;
+   background-color: black;
+}
+```
+
+#### ⭐ Chaining Selectors
+
+* Suppose we have the following HTML:
+
+```html
+<div>
+  <div class="section header">Latest Posts</div>
+  <p class="section preview">This is a preview</p>
+</div>
+```
+
+* Supose we only want to target the `subsection` AND `header` class, we can ⛓️CHAIN⛓️ our selectors
+
+```css
+.section.header {
+  color: red;
+}
+```
+
+* We can also chain an class and ID:
+
+```html
+<div>
+  <div class="section header">Latest Posts</div>
+  <p class="section" id="preview">This is a preview</p>
+</div>
+```
+
+```css
+.section#preview {
+  color: gray;
+}
+```
+
+#### ⭐ Descendant Combinator
+
+* Descendant selectors let us specify selectors WITHIN another selector.
+
+```css
+.ancestor .child {
+  /* this will only target .child classes contained within .ancestor classes */
+}
+```
+
+ * We can also specify the child of a child, and so on...
