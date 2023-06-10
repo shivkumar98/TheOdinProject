@@ -1,5 +1,11 @@
 # 🟪 Project 1: Recipes
 
+## ✅ Solution + Preview ✅
+
+* I worked on this project in the following repo: https://github.com/shivkumar98/odin-recipes
+
+* You can preview the website here: https://shivkumar98.github.io/odin-recipes/
+
 ## 📜 Assignment 📜
 
 * Create a new repo for this project on GitHub called `odin-recipes`
