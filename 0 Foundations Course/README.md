@@ -1181,3 +1181,15 @@ img {
 #### ⭐ Internal CSS ⭐
 
 * An internal CSS places ass CSS rules within `<style></style>` tags within the `<head>` element of the HTML
+
+#### ⭐ Inline CSS ⭐
+
+* We can write CSS rules directly within an element, e.g.:
+
+```html
+<body>
+  <div style="color: white; background-color:black"></div>
+</body>
+```
+
+* This method is not recommended, but can be useful when you want to target a unique element!
