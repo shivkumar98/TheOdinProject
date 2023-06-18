@@ -1105,3 +1105,41 @@ p {
   color: hsl(0,100%,50%); /* RED */
 }
 ```
+
+#### ⭐ Typography Basics and Text-Align ⭐
+
+* `font-family` lets us specify a list of values which determines font.
+
+* We can specify the font-family using a "font family name" using quotes (e.g. "Tikmes New Roman"), OR using a "generic family name" (e.g. sans-serif)
+
+* If the browser does not support a font, it will fallback to the next font in the list. It's best practive to use a generic family name font as fall back:
+
+```css
+p {
+  font-family: "Times New Roman", sans-serif;
+}
+```
+
+* `font-size` will set the size of a font:
+
+```css
+p {
+  font-family: 22px;
+}
+```
+
+* `font-weight` affects boldness of text. We can specify its value using a keyword OR a numericcal values between 1-1000:
+
+```css
+p {
+  font-weight: 700 /* equivalent to bold */
+}
+```
+
+* `text-align` lets you specify allignment. You can set its value to `left`/`right`, `center`, or `justify`:
+
+```css
+p {
+  text-align: justify;
+}
+```
