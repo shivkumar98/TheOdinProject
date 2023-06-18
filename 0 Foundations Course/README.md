@@ -1143,3 +1143,20 @@ p {
   text-align: justify;
 }
 ```
+
+#### ⭐ Image Height and Weight ⭐
+
+* Height and weight is NOT restricted to just images, but we shall focus on these first
+
+* If we do not specify `height`/`width` for an `<img>` element, then its values default to the files height and width.
+
+* ❗If we want to modify these properties but maintain the scale of the image, then we should use `auto` for the property we do not set❗ E.g.:
+
+```css
+img {
+  height: auto;
+  width: 500px;
+}
+```
+
+* It is best practice to set the width/heigh properties even if you do not change from original values. If we do not specify, then when the page is loading, the image will "pop" into place causing other elements to shift. If it is specified, then it leaves a static space.😱 
