@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .section {
+                background-color: orange;
+            }
+            .header {
+                background-color: blue;
+            }
+            .section, .header { /* THIS OVERRIDES THE ABOVE*/
+                background-color: aqua;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <div class="section header">Latest Posts</div>
+            <p class="section preview">This is a preview</p>
+        </div>
+    </body>
+</html>

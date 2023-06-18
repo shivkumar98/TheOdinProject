@@ -884,7 +884,7 @@ nisi ut aliquip ex ea commodo consequat.</p>
 
 ## 🟦 4.1 Introduction to CSS
 
-### 🔴 Introduction
+### 🔴 4.1.1 Introduction
 
 * CSS is used for styling our HTML! We shall look at selectors, property and values from CSS
 
@@ -896,7 +896,7 @@ nisi ut aliquip ex ea commodo consequat.</p>
 
 * We can group selectors together by seperating the selections with commas
 
-### 🔴 Scrimba Example
+### 🔴 4.1.2 Scrimba Example
 
 * Suppose we have the following HTML:
 
@@ -958,7 +958,7 @@ nisi ut aliquip ex ea commodo consequat.</p>
 ![](screenshots/2023-06-10-16-58-13.png)
 
 
-### 🔴 Selectors
+### 🔴 4.1.3 Selectors
 
 * The 🌎UNIVERSAL🌎 selector is an asterisks which targets ALL elements:
 
@@ -990,7 +990,7 @@ div {
 
 * An 🪪ID🪪 selector should be used very sparingly!
 
-#### ⭐ Grouping Selectors
+#### ⭐ Grouping Selectors ⭐
 
 * We can GROUP selectors together to avoid duplicating CSS styles:
 
@@ -1005,7 +1005,7 @@ div {
 }
 ```
 
-#### ⭐ Chaining Selectors
+#### ⭐ Chaining Selectors ⭐
 
 * Suppose we have the following HTML:
 
@@ -1039,7 +1039,7 @@ div {
 }
 ```
 
-#### ⭐ Descendant Combinator
+#### ⭐ Descendant Combinator ⭐
 
 * Descendant selectors let us specify selectors WITHIN another selector.
 
@@ -1051,4 +1051,37 @@ div {
 
  * We can also specify the child of a child, and so on...
 
- * We can also specify
+#### ⭐ Order Matters ⭐
+
+* If we target to selectors at the same level of specificity, then the last rule will have most precedence.
+
+* Suppose we have the following HTML:
+
+```html
+<div>
+    <div class="section header">Latest Posts</div>
+    <p class="section preview">This is a preview</p>
+</div>
+```
+
+* and CSS:
+
+```css
+  .section {
+      background-color: orange;
+  }
+  .header {
+      background-color: blue;
+  }
+  .section, .header {
+      background-color: aqua;
+  }
+```
+
+* Without the final CSS rule overriding the first and second rules, it would look like:
+
+![](screenshots/2023-06-18-18-31-02.png)
+
+* But if it is included, then both backgrounds are aqua:
+
+![](screenshots/2023-06-18-18-32-01.png)
