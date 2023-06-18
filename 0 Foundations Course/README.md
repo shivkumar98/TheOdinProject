@@ -1051,7 +1051,7 @@ div {
 
  * We can also specify the child of a child, and so on...
 
-#### ⭐ Order Matters ⭐
+### 🔴 4.1.4 Order Matters
 
 * If we target to selectors at the same level of specificity, then the last rule will have most precedence.
 
