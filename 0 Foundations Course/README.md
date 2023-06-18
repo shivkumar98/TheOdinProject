@@ -1177,3 +1177,7 @@ img {
   <link rel="stylesheet" href="styles.css">
 </head>
 ```
+
+#### ⭐ Internal CSS ⭐
+
+* An internal CSS places ass CSS rules within `<style></style>` tags within the `<head>` element of the HTML
