@@ -1161,3 +1161,19 @@ img {
 
 * It is best practice to set the width/heigh properties even if you do not change from original values. If we do not specify, then when the page is loading, the image will "pop" into place causing other elements to shift. If it is specified, then it leaves a static space.😱 
 
+### 🔴 4.1.6 Adding CSS to HTML
+
+* There are several ways to add CSS to our HTML files:
+
+#### ⭐ External CSS ⭐
+
+* We can reference a CSS file externally from out HTML file by specifying a `link` element in the head of the HTML. 
+
+* E.g. suppose we have a CSS file called `styles.css`:
+
+```html
+<!-- index.html -->
+<head>
+  <link rel="stylesheet" href="styles.css">
+</head>
+```
