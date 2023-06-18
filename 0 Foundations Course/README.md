@@ -1160,3 +1160,4 @@ img {
 ```
 
 * It is best practice to set the width/heigh properties even if you do not change from original values. If we do not specify, then when the page is loading, the image will "pop" into place causing other elements to shift. If it is specified, then it leaves a static space.😱 
+
