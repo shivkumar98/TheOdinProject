@@ -22,11 +22,11 @@
 
 ## 🟦 1.1 How Does the Web Work
 
-### 🔴 Introduction
+### 🔴 1.1.1 Introduction
 
 * This section will provide a hollistic overview of how the web works.
 
-### 🔴 Lesson Overview
+### 🔴 1.1.2 Lesson Overview
 
 * Describe what the internet is
 
@@ -38,7 +38,7 @@
 
 * Explain what IP addresses and DNS servers are,
 
-### 🔴 How Does the Internet Work?  
+### 🔴 1.1.3 How Does the Internet Work?  
 
 * The internet is a large netwrok of computers which can communicate together.
 
@@ -49,7 +49,7 @@
 ![](2023-06-03-11-25-21.png)
 
 
-### 🔴 Difference between Webpage, Website, Web server and Search Engine?
+### 🔴 1.1.4 Difference between Webpage, Website, Web server and Search Engine?
 
 * `Web page` - a document which can be displayed in a browser
 
@@ -59,7 +59,7 @@
 
 * `Search Engine` - A web service which lets you find other web pages
 
-### 🔴 How the Web interacts
+### 🔴 1.1.5 How the Web interacts
 
 * Computers connected to the internet are called `clients` and `servers`
 
@@ -79,7 +79,7 @@
 
 ## 🟦 1.2 Installation Overview
 
-### 🔴 Introduction
+### 🔴 1.2.1 Introduction
 
 * We will look at setting up the development environment!
 
@@ -118,7 +118,7 @@ PS C:\Users\shiv_>
 
 ## 🟦 1.4 Command Line Basics
 
-### 🔴 Lesson Overview
+### 🔴 1.4.1 Lesson Overview
 
 * Describe what the commannd line is and open the command line on your computer
 
@@ -130,7 +130,11 @@ PS C:\Users\shiv_>
 
 * Use the command line to open a file or folder in a program
 
-### 📜 Assignment - Unix Shell Course (Instructions) 📜
+
+
+### 👨‍💻 Assignment - Unix Shell Course 👨‍💻
+
+#### 📜 Instructions 📜
 
 1) Visit [The Unix Shell course](https://swcarpentry.github.io/shell-novice/) designed by the Software Carpentry Foundation. There you will find a full complement of lessons on using the CLI, but for now just focus on completing the following lessons:
 
@@ -140,8 +144,7 @@ PS C:\Users\shiv_>
   - Working With Files and Directories
   - Pipes and Filters
 
-
-### 👨‍💻 Assignment - Unix Shell Course 👨‍💻
+#### 💻 Commentary 💻
 
 * I work through the exercises. Here are my notes
 
@@ -330,9 +333,9 @@ $ wc -l *.pdb | sort -n | head -n 1
 
 ## 🟦 1.5 Setting up Git
 
-### 🔴 Configure Git and GitHub
+### 🔴 1.5.1 Configure Git and GitHub
 
-#### 🟡 Setup Git
+#### ⭐ Setup Git ⭐
 
 * I setup git within linux:
 
@@ -341,7 +344,7 @@ $ git config --global user.name "shivkumar98"
 $ git config --global user.email "shiv_kumar.98@outlook.com"
 ```
 
-#### 🟡 Create an SSH Key
+#### ⭐ Create an SSH Key ⭐
 
 * SSH key is a secure identifier - like a long password used to identify your machine. GitHub uses SSH key to upload tgo Github without having to use password everytime!
 
@@ -372,7 +375,7 @@ cat ~/.ssh/id_ed25519.pub
 
 * I copy this and paste it in the Key section, and click `Add Key`
 
-#### 🟡 Testing Your Key
+#### ⭐ Testing Your Key ⭐
 
 * I follow [this article]() and test the following command, and successfully connect!:
 
@@ -392,7 +395,7 @@ Hi shivkumar98! You've successfully authenticated, but GitHub does not provide s
 
 ## 🟦 2.1 Introduction to Git
 
-### 🔴 Introduction
+### 🔴 2.1.1 Introduction
 
 * Git allows you to record differences in files/folders AND keeps a historical record of each save.
 
@@ -400,16 +403,18 @@ Hi shivkumar98! You've successfully authenticated, but GitHub does not provide s
 
 ## 🟦 2.2 Git Basics
 
-### 📜 2.2.1 Assignment - Git Basics (Instructions) 📜
+### 👨‍💻 2.2.1 Assignment - Git Basics 👨‍💻
 
-#### 🟡 Create the Repository 
+#### 📜 Instructions 📜
+
+🟡 Create the Repository 
 
 1) Create a repository named `git_test` on GitHub  and check the `Add a README file` option.
 2) Copy the link for the repository and clone the repo.
 3) Create a directory called `repos` and clone the repository.
 4) Check your connected using `git remote -v`
 
-#### 🟡 Use the Git Workflow 
+🟡 Use the Git Workflow 
 
 1) Create a new file called `hello_world.txt` in git_test folder
 2) Use `git status` to see the staging of the file
@@ -417,7 +422,7 @@ Hi shivkumar98! You've successfully authenticated, but GitHub does not provide s
 4) Type `git commit -m "added hello_world.txt` and check git status again
 5) Type `git log` and see the output
 
-#### 🟡 Modify a File or Two
+🟡 Modify a File or Two
 
 1) Open the README of the repo
 2) Add "Hello Odin!" to line 3 and save the file
@@ -428,14 +433,14 @@ Hi shivkumar98! You've successfully authenticated, but GitHub does not provide s
 7) Add a commit message "Edit README.md and hello_world.txt" and check git status
 8) Look at git log
 
-#### 🟡 Push Your Work to GitHub
+🟡 Push Your Work to GitHub
 
 1) Type `git push origin main`
 2) Check status
 
 <hr>
 
-### 👨‍💻 2.2.2 Assignment - Git Basics (Demo) 👨‍💻
+#### 👨‍💻 Commentary 👨‍💻
 
 * I create the repository:
 
@@ -518,7 +523,7 @@ $ git remote set-url origin git@github.com:shivkumar98/git_test.git
 
 ## 🟦 3.1 Introduction to HTML and CSS
 
-### 🔴 Introduction
+### 🔴 3.1.1 Introduction
 
 * HTML is the raw data that a website is built out of, all the texts, links, cards, lists and buttons are created in HTML
 
@@ -539,13 +544,13 @@ $ git remote set-url origin git@github.com:shivkumar98/git_test.git
 
 ## 🟦 3.3 HTML Boilerplate
 
-### 🔴 Creating an HTML File
+### 🔴 3.3.1 Creating an HTML File
 
 * I create a HTML file called `index.html` [here](/0%20Foundations%20Course/Examples/1%20HTML%20Boilerplate/index.html).
 
 * We typically name the homepage of our websites as `index.html`
 
-### 🔴 The DOCTYPE
+### 🔴 3.3.2 The DOCTYPE
 
 * Every HTML page starts with the doctype declaration - this it to tell the browser which version of HTML should be used for rendering❗
 
@@ -555,7 +560,7 @@ $ git remote set-url origin git@github.com:shivkumar98/git_test.git
 <!DOCTYPE html>
 ```
 
-### 🔴 HTML Element
+### 🔴 3.3.3 HTML Element
 
 * The ROOT ELEMENT of a HTML file is `<html>`. We can specify the lang attribute as "en" to enable assistive technologies:
 
@@ -565,7 +570,7 @@ $ git remote set-url origin git@github.com:shivkumar98/git_test.git
 </html>
 ```
 
-### 🔴 Head Element
+### 🔴 3.3.4 Head Element
 
 * The `<head>` element is where we can add meta-data for our webpage.
 
@@ -583,12 +588,12 @@ $ git remote set-url origin git@github.com:shivkumar98/git_test.git
 </html>
 ```
 
-### 🔴 Body Element
+### 🔴 3.3.5 Body Element
 
 * The `<body>` element is used to contain all the user-displayed data
 
 
-### 🔴 Viewing HTML Files in Browser
+### 🔴 3.3.6 Viewing HTML Files in Browser
 
 * TOP recommends using Google Chrome! ❗
 
@@ -605,7 +610,7 @@ google-chrome index.html
 
 * In this lesson, we shall see common text-based elements
 
-### 🔴 Paragraphs
+### 🔴 3.4.1 Paragraphs
 
 * Suppose we have the following HTML, how will it render?
 
@@ -633,25 +638,25 @@ nisi ut aliquip ex ea commodo consequat.</p>
 </body>   
 ```
 
-### 🔴 Headings
+### 🔴 3.4.2 Headings
 
 * There are 6 different levels for headings: `<h1>` to `<h6>`
 
-### 🔴 Strong Element
+### 🔴 3.4.3 Strong Element
 
 * We use `<strong>` makes text **bold**
 
-### 🔴 Em Element
+### 🔴 3.4.4 Em Element
 
 * The `<em>` element makes text *italic*
 
-### 🔴 Nesting and Indentation
+### 🔴 3.4.5 Nesting and Indentation
 
 * Elements can be nested within each other. E.g. we can have `<p>` elements within the `<body>` element.
 
 * We use indentation to convey nesting more clearly!
 
-### 🔴 HTML Comments
+### 🔴 3.4.6 HTML Comments
 
 * Comments are enclosed within `<!--` and `-->`
 
@@ -660,7 +665,7 @@ nisi ut aliquip ex ea commodo consequat.</p>
 
 ## 🟦 3.5 Lists
 
-### 🔴 Unordered Lists
+### 🔴 3.5.1 Unordered Lists
 
 * We create unordered lists using `<ul>`. E.g.:
 
@@ -674,7 +679,7 @@ nisi ut aliquip ex ea commodo consequat.</p>
 
 ![](screenshots/2023-06-07-10-58-53.png)
 
-### 🔴 Ordered Lists
+### 🔴 3.5.2 Ordered Lists
 
 * Ordered lists are using `<ol>. E.g.:
 
@@ -688,7 +693,9 @@ nisi ut aliquip ex ea commodo consequat.</p>
 
 ![](screenshots/2023-06-07-11-00-31.png)
 
-### 📜 Assignment - Lists (Instructions) 📜
+### 👨‍💻 3.5.3 Assignment - Lists 👨‍💻
+
+#### 📜 Instructions 📜
 
 * Create a new HTML document and create the following lists:
 
@@ -700,7 +707,7 @@ nisi ut aliquip ex ea commodo consequat.</p>
 
 4) An ordered list of you all time top 5 favourite video games
 
-### 👨‍💻 Assignment Solution 👨‍💻
+#### 💻 Commentary 💻
 
 * I work on this assignment [here](/0%20Foundations%20Course/Assignments/2%20Lists/)
 
@@ -757,7 +764,7 @@ nisi ut aliquip ex ea commodo consequat.</p>
 * I prepare for this section by creating a HTML file [here](/0%20Foundations%20Course/Examples/2%20Links%20and%20Images/odin-links-and-images/index.html)
 
 
-### 🔴 Anchor Elements
+### 🔴 3.6.1 Anchor Elements
 
 * Anchor `<a>` elements are used for creating clickable links:
 
@@ -776,7 +783,7 @@ nisi ut aliquip ex ea commodo consequat.</p>
 * If href is not specified then the anchor will appear as plain text, otherwise it gets higlighted in blue.
 
 
-### 🔴 Absolute and Relative Links
+### 🔴 3.6.2 Absolute and Relative Links
 
 * 🎃 Absolute links are used to link to pages on the internet (and not part of your website). E.g. `https://www.theodinproject.com/about` 🎃
 
@@ -805,7 +812,7 @@ nisi ut aliquip ex ea commodo consequat.</p>
 <a href="pages/about.html">About</a>
 ```
 
-### 🔴 Images
+### 🔴 3.6.3 Images
 
 * We can display images using a self-closing `<img>` tag. We specify the image's location with the `src` attribute
 
@@ -829,7 +836,7 @@ nisi ut aliquip ex ea commodo consequat.</p>
 
 ![](screenshots/2023-06-07-12-07-37.png)
 
-### 🔴 Parent Directories
+### 🔴 3.6.4 Parent Directories
 
 * Let's suppose we want to add `dot.jpg` to th about page which is in a seperate directory to the `images` directory. We can reference the parent directory using `../`:
 
@@ -839,7 +846,7 @@ nisi ut aliquip ex ea commodo consequat.</p>
 
 * The image is displayed as expected
 
-### 🔴 Alt Attribute
+### 🔴 3.6.5 Alt Attribute
 
 * Every image element must also have an `alt` atttibute which describes the image. This will be displayed if the image cannot be loaded. Also helps with screen readers
 
@@ -849,7 +856,7 @@ nisi ut aliquip ex ea commodo consequat.</p>
 ```
 
 
-### 🔴 Four Main Image Formats
+### 🔴 3.6.6 Four Main Image Formats
 
 * There are 4 main image formats used on the web which are designed for different purposes. The 4 main types are:
 
