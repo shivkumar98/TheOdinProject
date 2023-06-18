@@ -1193,3 +1193,7 @@ img {
 ```
 
 * This method is not recommended, but can be useful when you want to target a unique element!
+
+### 👨‍💻 4.1.7 Assignment - CSS Exercises 👨‍💻
+
+* For this assignment, I forked a repo 'CSS Exercises'. You can find my solutions in the [README](https://github.com/shivkumar98/css-exercises/tree/main)
