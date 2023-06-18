@@ -1085,3 +1085,23 @@ div {
 * But if it is included, then both backgrounds are aqua:
 
 ![](screenshots/2023-06-18-18-32-01.png)
+
+### 🔴 4.1.5 Properties to Get Started With
+
+#### ⭐ Color and Background-Color ⭐
+
+* `color` sets the colour of FONT, while `background-color` sets colour of the background
+
+* We can specify colours using their names, Hex value, RGB value and HSL values:
+
+```css
+p {
+  color: #FF0000 /* RED */
+}
+p {
+  color: rgb(255,0,0); /* RED */
+}
+p {
+  color: hsl(0,100%,50%); /* RED */
+}
+```
