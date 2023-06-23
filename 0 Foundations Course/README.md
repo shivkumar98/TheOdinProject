@@ -1269,4 +1269,6 @@ img {
 
 ### 👨‍💻 4.1.7 Assignment - CSS Exercises 👨‍💻
 
-* For this assignment, I forked a repo 'CSS Exercises'. You can find my solutions in the [README](https://github.com/shivkumar98/css-exercises/tree/main)
+* For this assignment, I forked a repo [CSS Exercises](https://github.com/TheOdinProject/css-exercises)
+
+* I completed exercises 1-5 on 23/06/2023! See my solutions [here](https://github.com/shivkumar98/css-exercises)
