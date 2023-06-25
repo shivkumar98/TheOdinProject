@@ -1485,3 +1485,38 @@ img {
 
 * I completed this assignment on 25/06/2023! See my solution to this exercise [here](https://github.com/shivkumar98/css-exercises#-exercise-6-cascade-fix-)
 
+
+### 👨‍💻 4.2.5 Assignment - Update The Recipe Project 👨‍💻
+
+* I created a Repo where I create a basic website for my recipes([link](https://github.com/shivkumar98/odin-recipes))
+
+* I finished this assignment on 25/06/2023
+
+* I added a CSS file which is referenced by all the pages. The website now looks like:
+
+![](/screenshots/2023-06-25-20-24-42.png)
+
+* I defined the CSS as:
+
+```css
+* {
+    font-family:'Segoe UI', Tahoma, sans-serif;background-color: rgb(220, 168, 239);
+}
+body {
+    text-align: center;
+}
+a {
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(62, 62, 62);
+}
+h1 {
+    background-color: rgb(151, 98, 201);
+}
+h2 {
+    background-color: rgb(119, 119, 240);
+}
+ul, p, li {
+    font-size: 20px;
+}
+```
