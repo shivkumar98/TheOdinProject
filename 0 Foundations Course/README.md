@@ -81,7 +81,13 @@
       - [⭐ Internal CSS ⭐](#--internal-css--)
       - [⭐ Inline CSS ⭐](#--inline-css--)
     + [👨‍💻 4.1.7 Assignment - CSS Exercises 👨‍💻](#------417-assignment---css-exercises------)
-
+  * [🟦 4.2 The Cascade](#---42-the-cascade)
+    + [🔴 4.2.1 Lesson Overview](#---421-lesson-overview)
+    + [🔴 4.2.2 Scrimba Video Tutorial](#---422-scrimba-video-tutorial)
+    + [🔴 4.2.3 The Cascade of CSS](#---423-the-cascade-of-css)
+      - [⭐ Specificity ⭐](#--specificity--)
+    + [👨‍💻 4.2.4 Assignment - Cascade Fix 👨‍💻](#------424-assignment---cascade-fix------)
+    + [👨‍💻 4.2.5 Assignment - Update The Recipe Project 👨‍💻](#------425-assignment---update-the-recipe-project------)
 <hr>
 
 # 🧠 1 Prerequisites
