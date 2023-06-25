@@ -1478,3 +1478,10 @@ img {
     background-color: red;
 }
 ```
+
+### 👨‍💻 4.2.4 Assignment - Cascade Fix 👨‍💻
+
+* This assignment is a continuation fo the CSS exercises!
+
+* I completed this assignment on 25/06/2023! See my solution to this exercise [here](https://github.com/shivkumar98/css-exercises#-exercise-6-cascade-fix-)
+
