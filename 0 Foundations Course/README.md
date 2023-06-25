@@ -1272,3 +1272,13 @@ img {
 * For this assignment, I forked a repo [CSS Exercises](https://github.com/TheOdinProject/css-exercises)
 
 * I completed exercises 1-5 on 23/06/2023! See my solutions [here](https://github.com/shivkumar98/css-exercises)
+
+<br>
+
+## 🟦 4.2 The Cascade
+
+### 🔴 4.2.1 Lesson Overview
+
+1) What the cascade does
+2) Specificity and combining CSS selectors
+3) How inheritance affects certain properties
