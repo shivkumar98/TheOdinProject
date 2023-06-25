@@ -1,0 +1,6 @@
+.class1 .class2 { /* APPLIED IF RULE 2 NOT PRESENT */
+    background-color: yellow;   
+}
+.class1 > .class2 { /* RULE 2 */
+    background-color: red;
+}

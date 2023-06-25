@@ -1,0 +1,6 @@
+#section .list { /* APPLIED IF RULE 2 NOT PRESENT */
+    background-color: yellow;   
+}
+#section .main .list { /* RULE 2 */
+    background-color: red;
+}

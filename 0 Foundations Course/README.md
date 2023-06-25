@@ -1387,3 +1387,94 @@ img {
 ![](screenshots/2023-06-25-13-06-52.png)
 
 * But wait, the `<h1>` element retains its original styling😱 Why? This is due to **inheritance**! Typographical properties such as `color`, `font-size`, `font-family` are inherited!
+
+
+### 🔴 4.2.3 The Cascade of CSS
+
+* CSS obeys the algorithms determined by its creators!
+
+* Other issues, such as gaps between elements, can be due to the way the broswer running the webpage renders the CSS.
+
+* When things are not behaving as we expect, this is usually due to the way CSS rules conflict and override each other. This brings us to the Cascade!
+
+* The 🎃cascade🎃 determines which CSS rule gets applied when we have multiple rules for the same target.
+
+#### ⭐ Specificity ⭐
+
+* Specifity is used to determine what rule is applied when we have multiple and conflicting declarations targeting an element.
+
+* The order or precedence is: `ID > class > element` - I.e. ID selectors have the highest specificity
+
+* ⚠️If two rules have the same specificity, then the CSS behaves as if there is no specificity and will apply the rule which is defined latest.⚠️
+
+* E.g. 1, chained classes are more specific:
+
+```html
+<!-- index.html -->
+<div class="main">
+  <div class="list subsection"></div>
+</div>
+```
+
+```css
+.subsection { /* IGNORED */
+  color: blue;
+}
+.main .list { /* chained selector => more specific*/
+  color: red;
+}
+```
+
+* E.g. 2, ID selector is more specfic than chained
+
+```html
+<!-- index.html -->
+<div class="main">
+  <div class="list" id="section"></div>
+</div>
+```
+
+```css
+.main .list { /* IGNORED */
+  color: white;
+}
+#section {
+  color: black; /* APPLIED */
+}
+```
+
+* E.g. 3, additional selectors increase specificity
+
+```html
+<div id="section">
+    <div class="main">
+        <div class="list" >TEXT</div>
+    </div>
+</div>
+```
+
+```css
+#section .list { /* APPLIED IF RULE 2 NOT PRESENT */
+    background-color: yellow;   
+}
+#section .main .list { /* RULE 2 */
+    background-color: red;
+}
+```
+
+* E.g. 4, special symbols do not change specificity:
+
+```html
+<div class="class1">
+  <div class="class2" >TEXT</div>
+</div>
+```
+
+```css
+.class1 .class2 { /* APPLIED IF RULE 2 NOT PRESENT */
+    background-color: yellow;   
+}
+.class1 > .class2 { /* RULE 2 */
+    background-color: red;
+}
+```
