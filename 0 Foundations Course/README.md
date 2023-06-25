@@ -1283,7 +1283,7 @@ img {
 2) Specificity and combining CSS selectors
 3) How inheritance affects certain properties
 
-### 🔴 4.2.2 Scrimba
+### 🔴 4.2.2 Scrimba Video Tutorial
 
 * We may have unexpected CSS behaviour, this can be due to the following reasons:
 
