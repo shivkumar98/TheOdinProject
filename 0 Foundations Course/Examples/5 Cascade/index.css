@@ -1,0 +1,64 @@
+/* ========== CHALLENGE 1 ========== //
+//
+// Change the background color of the recipe-card
+//      -- the style must be above the .recipe-card selector
+//      -- you cannot edit the .recipe-card rule
+*/
+* {
+    line-height: 1.5;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+    width: 200px;
+}
+
+ul {
+    list-style: none;
+}
+
+h1 {
+    color: darkred;
+}
+
+/* styles here */
+.recipe-card.feature { /* specificity: 10+10=20*/
+    background-color: yellow;
+}
+
+.recipe-card { /* specificity: 10 */
+    background-color: green;
+}
+
+
+.recipe-card {
+    width: 400px;
+    text-align: center;
+    background-color: #FFFAFA;
+}
+
+.recipe-content {
+    text-align: left;
+}
+
+.recipe-card h2,
+.recipe-card a {
+    text-transform: uppercase;
+}
+
+.recipe-card.feature {
+    border: 2px solid darkred;
+}
+
+ul li h2 {
+    font-size: 16px;
+}
+
+.recipe-card a {
+    background-color: #fc9400;
+    color: #fff;
+    text-decoration: none;
+}

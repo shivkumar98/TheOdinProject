@@ -1282,3 +1282,108 @@ img {
 1) What the cascade does
 2) Specificity and combining CSS selectors
 3) How inheritance affects certain properties
+
+### 🔴 4.2.2 Scrimba
+
+* We may have unexpected CSS behaviour, this can be due to the following reasons:
+
+1) The broswer stylesheet
+2) Incorrect CSS values
+3) Conflicts in the cascade
+
+* The cascade determines which rule will be applied when we have multiple rules for the same item. 
+
+* Specificity values determine which rule will override the others. Here is a table of the specificity values:
+
+| Selector    | Value     | Example   |
+| ------------|-----------|-----------|
+| Type selector | 1   | img {}      |
+| Class selector | 10   | .recipe-card {} |
+| ID selector   | 100   | #container {} A|
+
+* Suppose we have the following HTML:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipe Card</title>
+    <link rel="stylesheet" href="index.css" />
+ </head>
+ <body>
+    <div class="container" id="container">
+        <div class="recipe-card feature">
+            <img
+            src="cupcake.jpg"
+            alt="Red Velvet Cupcake - Photo by luisana zerpa on Unsplash"
+            />
+            <div class="recipe-content">
+                <h1>Red Velvet Cupcakes</h1>
+                <p>This red velvet cupcake recipe yields soft, fluffy cupcakes with a rich chocolate flavor and a vibrant red color. Topped with a creamy and tangy cream cheese frosting, these cupcakes are perfect for any occasion and are sure to impress your guests.</p>
+                <section class="recipe-info">
+                    <ul>
+                        <li class="recipe-prep-time">
+                            <h2>Preparation Time</h2>
+                            <p>30 min</p>
+                        </li>
+                        <li>
+                            <h2>Total Time</h2>
+                            <p>40 min</p>
+                        </li>
+                        <li>
+                            <h2>Yield</h2>
+                            <p>40 min</p>
+                        </li>
+                    </ul>
+                </section>
+            </div>                            
+            <a href="#">View recipe</a>
+        </div>
+  </div>
+ </body>
+</html>
+```
+
+* The page looks something like this:
+
+![](screenshots/2023-06-25-12-37-23.png)                                           
+
+* Suppose we have the following CSS rules:
+
+```css
+.recipe-card.feature { /* specificity: 10+10=20*/
+    background-color: yellow;
+}
+
+.recipe-card { /* specificity: 10 */
+    background-color: green;
+}
+```
+
+* What will the background colour be?🤔
+
+* ANSWER: Yellow✅✅
+
+* Why? Because the first rule is MORE SPECIFIC! We can see this is the case by calculating the specificity value (`20 > 10`).
+
+* Now suppose we apply the background color to the div element using an INLINE element:
+
+```html
+<div class="recipe-card feature" style="background-color:orange">
+```
+
+* What will the background color be? It will be orange! Inline elements have a specificity of 1000!
+
+* Suppose we want to make the text within the div with class `recipe-content` white with inline styles:
+
+```html
+<div class="recipe-content" style="color: white;">
+```
+
+* This makes all the text white:
+
+![](screenshots/2023-06-25-13-06-52.png)
+
+* But wait, the `<h1>` element retains its original styling😱 Why? This is due to **inheritance**! Typographical properties such as `color`, `font-size`, `font-family` are inherited!
