@@ -1550,3 +1550,19 @@ ul, p, li {
 
   - Press `F12`
   - Right-click and click `Inspect`
+
+### 🔴 4.3.3 Inspecting Elements
+
+* The elements pane looks like:
+
+![](screenshots/2023-06-26-19-53-55.png)
+
+* If you want to find the HTML which corresponds to an element on the page, you can click on the top-right corner button:
+
+![](screenshots/inspection.gif)
+
+* When we are looking at a specific element in the Elements inspector, we can also see the CSS rules in the `Styles` pane:
+
+![](screenshots/2023-06-26-20-03-11.png)
+
+* The rules which are striked out, are CSS rules which have been overwritten!
