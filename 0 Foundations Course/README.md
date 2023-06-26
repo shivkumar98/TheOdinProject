@@ -1543,3 +1543,10 @@ ul, p, li {
 * You will know how to select and inspect specific elements
 
 * Know how to test HTML and CSS in the inspector
+
+### 🔴 4.3.2 The Inspector
+
+* To open the inspector you can either:
+
+  - Press `F12`
+  - Right-click and click `Inspect`
