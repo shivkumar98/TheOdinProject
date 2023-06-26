@@ -1279,6 +1279,9 @@ img {
 
 * I completed exercises 1-5 on 23/06/2023! See my solutions [here](https://github.com/shivkumar98/css-exercises)
 
+
+
+
 <br>
 
 ## 🟦 4.2 The Cascade
@@ -1527,3 +1530,16 @@ ul, p, li {
 }
 ```
 
+<br>
+
+## 🟦 4.3 Inspecting HTML and CSS
+
+* This lesson will go through the Chrome Dev Tools which will enable me to see more information for elements and the CSS rules
+
+### 🔴 4.3.1 Lesson Overview
+
+* How to access the element inspector
+
+* You will know how to select and inspect specific elements
+
+* Know how to test HTML and CSS in the inspector
