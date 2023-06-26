@@ -1565,4 +1565,30 @@ ul, p, li {
 
 ![](screenshots/2023-06-26-20-03-11.png)
 
-* The rules which are striked out, are CSS rules which have been overwritten!
+* The rules which are striked out, are CSS rules which have been overwritten!⚠️
+
+
+### 🔴 4.3.4 Testing Styles in the Inspector
+
+* They `Styles` pane also let you see/edit stgyles in real time. 
+
+* E.g. here I change the background color of this button:
+
+![](screenshots/changing-styles.gif)
+
+### 👨‍💻 4.3.5 Assignment - Chrome DevTools Docs 👨‍💻
+
+#### 📜 Instructions 📜
+
+* View the [official Chrome DevTool docs](https://developer.chrome.com/docs/devtools/)
+
+1) See the [overview](https://developer.chrome.com/docs/devtools/overview/)
+
+2) See how to open DevTool easier [here](https://developer.chrome.com/docs/devtools/open/)
+
+3) I went through [Get Started With  Viewing and Changing the DOM](https://developer.chrome.com/docs/devtools/dom/)
+
+4) I went through: [View and Change CSS](https://developer.chrome.com/docs/devtools/css/)
+
+* I completed this assignment on 26/06/2023!
+
